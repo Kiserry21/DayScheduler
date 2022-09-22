@@ -28,7 +28,7 @@ THEN the saved events persist
 
 # Visuals
 
-![alt text](./assets/images/SS1.png)
-![alt text](./assets/images/SS2.png)
+![alt text](./images/SS1.png)
+![alt text](./images/SS2.png)
 
 https://kiserry21.github.io/DayScheduler/
