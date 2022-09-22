@@ -31,3 +31,4 @@ THEN the saved events persist
 ![alt text](./assets/images/SS1.png)
 ![alt text](./assets/images/SS2.png)
 
+https://kiserry21.github.io/DayScheduler/
