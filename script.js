@@ -1,6 +1,6 @@
 $(document).ready(function () {
     //Moment.js code for current date and time
-    let NowMoment = moment().format("MMMM Do YYYY");
+    let NowMoment = moment().format("ddd MMM Do");
     let displayDate = document.getElementById("currentDay");
     displayDate.innerHTML = NowMoment;
     let currentHour = moment().format("HH");
@@ -18,6 +18,7 @@ $(document).ready(function () {
       
       if (currentHour == timeDiv) {
         $(this).addClass("present");
+        console.log(present)
         $(this).children(".description").addClass("white-text");
       } else if (currentHour < timeDiv) {
         $(this).removeClass("present");
@@ -31,10 +32,12 @@ $(document).ready(function () {
     //grabs values from time and value divs and saves them to local storage
     $(".saveBtn").click(function (event) {
       event.preventDefault();
+      console.log('saveBtn')
       var value = $(this).siblings(".time-block").val();
       var time = $(this).parent().attr("id").split("-")[1];
       localStorage.setItem(time, value);
     });
+
   
     //retrieves items from local storage and sets them in proper places
     $("#hour-09 .time-block").val(localStorage.getItem("09"));
