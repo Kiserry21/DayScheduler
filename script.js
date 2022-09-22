@@ -18,7 +18,6 @@ $(document).ready(function () {
       
       if (currentHour == timeDiv) {
         $(this).addClass("present");
-        console.log(present)
         $(this).children(".description").addClass("white-text");
       } else if (currentHour < timeDiv) {
         $(this).removeClass("present");
